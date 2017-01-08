@@ -1,0 +1,9 @@
+---
+- name: Install zsh
+  apt: name=zsh state=latest
+
+- name: Set zsh as default shell
+  user: name={{ item }} shell=/bin/zsh
+  with_items:
+     - root
+     - ubuntu
