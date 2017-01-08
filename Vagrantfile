@@ -24,15 +24,21 @@ Vagrant.configure(CONFIG[:vagrantApiVersion]) do |config|
   config.vm.provider 'virtualbox' do |v|
     v.gui    = CONFIG['system'][:gui]
     v.name   = CONFIG['system'][:hostname]
+
     v.memory = CONFIG['system'][:memory]
+    #v.customize ['modifyvm', :id, '--vram', '256']
+
+    #v.customize ['modifyvm', :id, '--cpuexecutioncap', '50'] # Use not more than 50% host cpu
 
     # https://serverfault.com/questions/453185/vagrant-virtualbox-dns-10-0-2-3-not-working
-    v.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
-    v.customize ['modifyvm', :id, '--natdnsproxy1', 'on']
+    #v.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
+    #v.customize ['modifyvm', :id, '--natdnsproxy1', 'on']
 
-    v.customize ['modifyvm', :id, '--ioapic', 'on']
+    #v.customize ['modifyvm', :id, '--ioapic', 'on']
+    #v.customize ['modifyvm', :id, '--rtcuseutc', 'on']
+    #v.customize ['modifyvm', :id, '--accelerate3d', 'on']
+    #v.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
 
-    v.customize ['modifyvm', :id, '--cpuexecutioncap', '50'] # Use not more than 50% host cpu
     #v.customize ['modifyvm', :id, '--monitorcount', '2'] # Use two monitors from host
   end
 
