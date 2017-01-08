@@ -12,10 +12,10 @@ This machine should be used for development.
 
 - [x] Spin up Machine
 - [x] Install something via Ansible
-- [] Use desktop version of Ubuntu
-- [] Build own xfce box using packer
-- [] Install zsh tools
-- [] Install development tools (IntelliJ, VSC, etc.)
+- [ ] Use desktop version of Ubuntu
+- [ ] Build own xfce box using packer
+- [ ] Install zsh tools
+- [ ] Install development tools (IntelliJ, VSC, etc.)
 
 # Inspirations
 
