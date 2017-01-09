@@ -12,10 +12,10 @@ This machine should be used for development.
 
 - [x] Spin up Machine
 - [x] Install something via Ansible
-- [ ] Use desktop version of Ubuntu
-- [ ] Build own xfce box using packer
+- [x] Use desktop version of Xubuntu
 - [ ] Install zsh tools
 - [ ] Install development tools (IntelliJ, VSC, etc.)
+- [ ] Build own xfce box using packer
 
 # Inspirations
 
@@ -28,6 +28,7 @@ This machine should be used for development.
 
 * https://www.vagrantup.com/docs/
 * https://github.com/fabioCollini/vagrant
+* https://github.com/hypebeast/ansible-i3-xfce
 
 ## Packer
 
